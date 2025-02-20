@@ -5,7 +5,7 @@ import streamlit as st
 st.set_page_config(page_title="Diabetes Prediction", layout="wide", page_icon="🧑‍⚕")
 
 # Load the trained diabetes model
-diabetes_model_path = r"diabetes_model.sav"
+diabetes_model_path = "diabetes_model.sav"
 try:
     with open(diabetes_model_path, 'rb') as file:
         diabetes_model = pickle.load(file)
